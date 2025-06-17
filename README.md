@@ -1,3 +1,4 @@
+![Stable](https://img.shields.io/badge/status-stable-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 # vim-easydash
 
 **vim-easydash** is a lightweight, extensible dashboard plugin for Vim and Neovim. It displays a customizable start screen when you launch your editor, featuring an ASCII logo and quick-access menu options, each with convenient key mappings. Designed for ease of configuration and minimalism, vim-easydash provides an elegant entry point to your sessions.
