@@ -37,7 +37,7 @@ endfunction
 function! easydash#Resize() abort
     for winnr in range(1, winnr('$'))
         let bufnr = winbufnr(winnr)
-        if getbufvar(bufnr, '&filetype') ==# 'dashboard'
+        if getbufvar(bufnr, '&filetype') ==# 'easydash'
             let curwin = winnr()
             execute winnr . 'wincmd w'
             call easydash#Draw()
