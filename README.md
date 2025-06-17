@@ -65,21 +65,31 @@ Place your customizations in your `.vimrc`, `init.vim`, or `init.lua`.
 let g:easydash_name = 'EasyDash'
 
 " ASCII logo (list of strings)
+let g:easydash_logo = [
+        \ '',
+        \ '·······················································',
+        \ ':      ____                ______          _          :',
+        \ ':     |  __|               |  _  \        | |         :',
+        \ ':     | |__  ____ ___ _   _| | | |____ ___| |___      :',
+        \ ':     |  __|/ _  / __| | | | | | / _  / __| __  \     :',
+        \ ':     | |__| (_| \__ \ |_| | |/ / (_| \__ \ | | |     :',
+        \ ':     \____/\____|___/\__. |___/ \____|___/_| |_|     :',
+        \ ':                      __/ |                          :',
+        \ ':                     |___/                           :',
+        \ '·······················································',
+        \ '',
+        \ ]
 
 " Define menu options (identifiers)
-let g:easydash_options = ['files', 'recent', 'quit']
+let g:easydash_options = ['newfile', 'quit']
 
 " Custom menu entries
 let g:easydash_menu_files = {
-      \ 'keymap': 'f',
-      \ 'label': 'Find Files',
-      \ 'command': ':Files<CR>',
+      \ 'keymap': 'n',
+      \ 'label': 'New File',
+      \ 'command': ':enew<CR>',
       \ }
-let g:easydash_menu_recent = {
-      \ 'keymap': 'r',
-      \ 'label': 'Recent Files',
-      \ 'command': ':History<CR>',
-      \ }
+
 let g:easydash_menu_quit = {
       \ 'keymap': 'q',
       \ 'label': 'Quit',
